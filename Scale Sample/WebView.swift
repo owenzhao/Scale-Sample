@@ -18,7 +18,7 @@ struct WebView:NSViewRepresentable, Equatable, Identifiable {
         return lhs.url == rhs.url
     }
     
-    @State var url:URL
+    let url:URL
     
     func makeNSView(context: Context) -> WKWebView {
         let webView = WKWebView()
